@@ -4,4 +4,7 @@
 # see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
+# Make it possible to store after the Binder stopped.
+jupyter labextension install jupyter-offlinenotebook
+
 jupyter lab build
