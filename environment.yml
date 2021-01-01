@@ -1,7 +1,7 @@
 # See https://github.com/binder-examples/conda
 name: radis-env
 channels:
-- anaconda
+- conda-forge
 - astropy
 dependencies:
 - python=3.6
@@ -24,6 +24,7 @@ dependencies:
 - pip
 # Specific to radis-lab : 
 - pyqt
+- ipympl
 - pip:
   - publib>=0.3.2  # Plotting styles for Matplotlib
   - hitran-api
