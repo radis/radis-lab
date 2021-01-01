@@ -1,10 +1,26 @@
 #!/bin/bash
 
-# Install a JupyterLab extension for interactive plots 
-# see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
+# JupyterLab extensions
+# ---------------------
+
+# interactive plots 
+# ... see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
 # Make it possible to store after the Binder stopped.
 jupyter labextension install jupyter-offlinenotebook
 
 jupyter lab build
+
+
+# Datasets
+# --------
+
+mkdir databases
+cd databases
+
+# HITEMP 
+mkdir HITEMP
+cd HITEMP
+# ... CO
+wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2
