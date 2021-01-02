@@ -1,0 +1,85 @@
+// Colors
+$text: white;
+$link: #e34234;
+$link-hover: #ba160c;
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: $text;
+  max-width: 90%;
+  padding: 2em 3em;
+  background: rgba(0, 0, 0, 0.75);
+  text-shadow: 0px 0px 2px #131415;
+  font-family: "Work Sans";
+  text-align: center;
+}
+
+h1 {
+  color: #FFFFFF;  
+  font-size: 2.25em;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+h1:selection { background-color: #7628A1; }
+
+h1:hover { 
+  background-color: #7628A1;
+}
+
+h2 {
+    color: #30C328;
+}
+
+h2:hover {
+}
+
+a,
+a:visited {
+  color: $link;
+  transition: 0.25s;
+}
+
+a:hover,
+a:focus {
+  color: $link-hover;
+}
+
+
+.github {
+  bottom: 10px;
+  right: 10px;
+  position: fixed;
+  border-radius: 10px;
+  background: #fff;
+  padding: 6px 6px 6px 6px;
+  border: 1px solid #000;
+}
+
+.github a:hover,
+.github a:link,
+.github a:visited,
+.github a:active {
+  color: #fff;
+  text-decoration: none;
+}
+
+.github img {
+  height: 30px;
+}
+
+.github #gh-project {
+  font-size: 20px;
+  padding-left: 5px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
