@@ -16,6 +16,6 @@ Get started
 -----------
 
 .. image:: https://mybinder.org/badge.svg 
-    :target: https://mybinder.org/v2/gh/radis/radis-lab/main?urlpath=lab/tree/compare_with_experiment.ipynb
-    :alt: https://mybinder.org/v2/gh/radis/radis-lab/main?urlpath=lab/tree/compare_with_experiment.ipynb
+    :target: https://mybinder.org/v2/gh/radis/radis-lab/main?urlpath=lab/tree/welcome.md
+    :alt: https://mybinder.org/v2/gh/radis/radis-lab/main?urlpath=lab/tree/welcome.md
 
