@@ -14,7 +14,7 @@
                             "type": "tab-area",
                             "currentIndex": 0,
                             "widgets": [
-                                "markdownviewer-widget:welcome.md",
+                                "notebook:welcome.ipynb",
                                 "notebook:compare_with_experiment.ipynb"
                             ]
                         },
@@ -28,7 +28,7 @@
                     ]
                 },
                 "mode": "multiple-document",
-                "current": "markdownviewer-widget:welcome.md"
+                "current": "notebook:welcome.ipynb"
             },
             "left": {
                 "collapsed": false,
@@ -72,10 +72,10 @@
         "file-browser-filebrowser:cwd": {
             "path": ""
         },
-        "markdownviewer-widget:welcome.md": {
+        "notebook:welcome.ipynb": {
             "data": {
-                "path": "welcome.md",
-                "factory": "Markdown Preview"
+                "path": "welcome.ipynb",
+                "factory": "Notebook"
             }
         }
     },

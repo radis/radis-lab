@@ -15,8 +15,4 @@
 # ... Import the workspace layout into JupyterLab (windows opened, etc.)
 jupyter lab workspaces import binder/workspace.json
 
-# ... Copy settings (such as Dark theme, etc.)
-# cp binder/user-settings/themes.jupyterlab-settings @/.jupyter/lab/user-settings/@jupyterlab
-
-
 exec "$@"
