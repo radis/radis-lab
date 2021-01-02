@@ -1,0 +1,109 @@
+{
+    "data": {
+        "layout-restorer:data": {
+            "main": {
+                "dock": {
+                    "type": "split-area",
+                    "orientation": "horizontal",
+                    "sizes": [
+                        0.6578227466108787,
+                        0.34217725338912125
+                    ],
+                    "children": [
+                        {
+                            "type": "tab-area",
+                            "currentIndex": 0,
+                            "widgets": [
+                                "markdownviewer-widget:welcome.md",
+                                "notebook:compare_with_experiment.ipynb"
+                            ]
+                        },
+                        {
+                            "type": "split-area",
+                            "orientation": "vertical",
+                            "sizes": [
+                                0.49515181015380616,
+                                0.5048481898461938
+                            ],
+                            "children": [
+                                {
+                                    "type": "tab-area",
+                                    "currentIndex": 0,
+                                    "widgets": [
+                                        "inspector:inspector"
+                                    ]
+                                },
+                                {
+                                    "type": "tab-area",
+                                    "currentIndex": 1,
+                                    "widgets": [
+                                        "console:compare_with_experiment.ipynb"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "mode": "multiple-document",
+                "current": "console:compare_with_experiment.ipynb"
+            },
+            "left": {
+                "collapsed": false,
+                "current": "filebrowser",
+                "widgets": [
+                    "filebrowser",
+                    "running-sessions",
+                    "command-palette",
+                    "jp-property-inspector",
+                    "tab-manager",
+                    "extensionmanager.main-view"
+                ]
+            },
+            "right": {
+                "collapsed": true,
+                "widgets": []
+            }
+        },
+        "notebook:compare_with_experiment.ipynb": {
+            "data": {
+                "path": "compare_with_experiment.ipynb",
+                "factory": "Notebook"
+            }
+        },
+        "inspector:inspector": {
+            "data": {}
+        },
+        "@jupyterlab/settingeditor-extension:plugin": {
+            "sizes": [
+                0.2289758534554538,
+                0.7710241465445462
+            ],
+            "container": {
+                "plugin": "@jupyterlab/console-extension:tracker",
+                "sizes": [
+                    0.5,
+                    0.5
+                ]
+            }
+        },
+        "file-browser-filebrowser:cwd": {
+            "path": ""
+        },
+        "markdownviewer-widget:welcome.md": {
+            "data": {
+                "path": "welcome.md",
+                "factory": "Markdown Preview"
+            }
+        },
+        "console:compare_with_experiment.ipynb": {
+            "data": {
+                "path": "compare_with_experiment.ipynb",
+                "name": "compare_with_experiment.ipynb",
+                "kernelPreference": {}
+            }
+        }
+    },
+    "metadata": {
+        "id": "/lab"
+    }
+}

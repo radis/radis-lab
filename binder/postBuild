@@ -24,3 +24,13 @@ mkdir HITEMP
 cd HITEMP
 # ... CO
 wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2
+
+
+
+# Workspace Layout 
+# ----------------
+
+cd
+
+# Import the workspace into JupyterLab
+jupyter lab workspaces import binder/workspace.json
