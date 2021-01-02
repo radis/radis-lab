@@ -19,33 +19,16 @@
                             ]
                         },
                         {
-                            "type": "split-area",
-                            "orientation": "vertical",
-                            "sizes": [
-                                0.49515181015380616,
-                                0.5048481898461938
-                            ],
-                            "children": [
-                                {
-                                    "type": "tab-area",
-                                    "currentIndex": 0,
-                                    "widgets": [
-                                        "inspector:inspector"
-                                    ]
-                                },
-                                {
-                                    "type": "tab-area",
-                                    "currentIndex": 1,
-                                    "widgets": [
-                                        "console:compare_with_experiment.ipynb"
-                                    ]
-                                }
+                            "type": "tab-area",
+                            "currentIndex": 0,
+                            "widgets": [
+                                "inspector:inspector"
                             ]
                         }
                     ]
                 },
                 "mode": "multiple-document",
-                "current": "console:compare_with_experiment.ipynb"
+                "current": "markdownviewer-widget:welcome.md"
             },
             "left": {
                 "collapsed": false,
@@ -93,13 +76,6 @@
             "data": {
                 "path": "welcome.md",
                 "factory": "Markdown Preview"
-            }
-        },
-        "console:compare_with_experiment.ipynb": {
-            "data": {
-                "path": "compare_with_experiment.ipynb",
-                "name": "compare_with_experiment.ipynb",
-                "kernelPreference": {}
             }
         }
     },

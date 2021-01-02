@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# See https://mybinder.readthedocs.io/en/latest/using/config_files.html
+
+# set environment variables
+# ...
+
+# execute run commands
+# ...
+
+
+
+# Workspace Layout 
+
+# ... Import the workspace layout into JupyterLab (windows opened, etc.)
+jupyter lab workspaces import binder/workspace.json
+
+# ... Copy settings (such as Dark theme, etc.)
+cp binder/user-settings/themes.jupyterlab-settings @/.jupyter/lab/user-settings/@jupyterlab
+
+
+exec "$@"
