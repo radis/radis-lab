@@ -3,7 +3,7 @@
 # JupyterLab extensions
 # ---------------------
 
-# interactive plots 
+# interactive Matplotlib plots 
 # ... see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager
 
@@ -16,11 +16,37 @@ jupyter lab build --name="RadisLab"
 # Datasets
 # --------
 
+# Create folders if needed
+cd ~
 mkdir databases
 cd databases
-
-# HITEMP 
 mkdir HITEMP
-cd HITEMP
+
+# Download HITEMP 
+cd ~/databases/HITEMP
 # ... CO
 wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2
+
+
+# Unzip HITEMP
+cd ~/databases/HITEMP
+python hitemp_bz2_extract.py 05_HITEMP2019.par.bz2
+
+
+# Initial runs
+# ------------
+# (to auto-download / cache some database files
+# see https://github.com/radis/radis-lab/issues/9
+
+# Init databases
+cd ~/databases
+python init_radis_config.py
+
+
+
+cd ~
+papermill welcome.ipynb /dev/null 
+papermill compare_with_experiment.ipynb /dev/null 
+papermill compare_CO_HITRAN_HITEMP.ipynb /dev/null 
+cd ~/examples/co2-4080-4500nm
+papermill co2-4080-4500.ipynb /dev/null 

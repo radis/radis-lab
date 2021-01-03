@@ -25,6 +25,7 @@ dependencies:
 # Specific to radis-lab : 
 - pyqt
 - ipympl>=0.5.6  # for interactive plots
+- papermill  # for https://github.com/radis/radis-lab/issues/9
 - pip:
   - publib>=0.3.2  # Plotting styles for Matplotlib
   - hitran-api
