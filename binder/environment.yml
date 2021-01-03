@@ -35,3 +35,4 @@ dependencies:
   # Specific to radis-lab:
   - radis>=0.9.26
   - jupyter-offlinenotebook
+  - jupyterlab_hdf

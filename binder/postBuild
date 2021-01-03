@@ -10,6 +10,9 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 # Make it possible to store after the Binder stopped.
 jupyter labextension install jupyter-offlinenotebook
 
+# HDF5 support to read line cache files and rovibrational energy files
+jupyter labextension install @jupyterlab/hdf5
+
 jupyter lab build --name="RadisLab"
 
 
