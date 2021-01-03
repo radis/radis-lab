@@ -10,7 +10,7 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 # Make it possible to store after the Binder stopped.
 jupyter labextension install jupyter-offlinenotebook
 
-jupyter lab build
+jupyter lab build --name="RadisLab"
 
 
 # Datasets
