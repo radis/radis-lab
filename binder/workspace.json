@@ -6,16 +6,15 @@
                     "type": "split-area",
                     "orientation": "horizontal",
                     "sizes": [
-                        0.6578227466108787,
-                        0.34217725338912125
+                        0.75,
+                        0.25
                     ],
                     "children": [
                         {
                             "type": "tab-area",
                             "currentIndex": 0,
                             "widgets": [
-                                "notebook:welcome.ipynb",
-                                "notebook:compare_with_experiment.ipynb"
+                                "notebook:welcome.ipynb"
                             ]
                         },
                         {
@@ -35,6 +34,7 @@
                 "current": "filebrowser",
                 "widgets": [
                     "filebrowser",
+                    "hdf-filebrowser",
                     "running-sessions",
                     "command-palette",
                     "jp-property-inspector",
@@ -47,28 +47,6 @@
                 "widgets": []
             }
         },
-        "notebook:compare_with_experiment.ipynb": {
-            "data": {
-                "path": "compare_with_experiment.ipynb",
-                "factory": "Notebook"
-            }
-        },
-        "inspector:inspector": {
-            "data": {}
-        },
-        "@jupyterlab/settingeditor-extension:plugin": {
-            "sizes": [
-                0.2289758534554538,
-                0.7710241465445462
-            ],
-            "container": {
-                "plugin": "@jupyterlab/console-extension:tracker",
-                "sizes": [
-                    0.5,
-                    0.5
-                ]
-            }
-        },
         "file-browser-filebrowser:cwd": {
             "path": ""
         },
@@ -77,6 +55,9 @@
                 "path": "welcome.ipynb",
                 "factory": "Notebook"
             }
+        },
+        "inspector:inspector": {
+            "data": {}
         }
     },
     "metadata": {
