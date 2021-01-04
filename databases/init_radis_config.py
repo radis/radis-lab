@@ -12,8 +12,8 @@ from radis.misc.config import (
 RADIS_LAB_DATABASES = {
     "HITEMP2019-CO":
     {
-        "info": "HITEMP2019 CO lines with TIPS for partition functions and RADIS for nonequilibrium",
-        "path": ["databases/HITEMP/05_HITEMP2019_all.par"],
+        "info": "HITEMP2019 CO lines with TIPS-2017 for partition functions (equilibrium) and RADIS for rovibrational energies (nonequilibrium) ",
+        "path": ["/home/jovyan/databases/HITEMP/05_HITEMP2019_all.par"],
         "format": "hitran",
         "parfuncfmt": "hapi",
         "levelsfmt": "radis",
