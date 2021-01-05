@@ -18,6 +18,14 @@ RADIS_LAB_DATABASES = {
         "parfuncfmt": "hapi",
         "levelsfmt": "radis",
     },
+    "HITEMP2010-CO2":
+    {
+        "info": "HITEMP2020 CO2 lines with TIPS-2017 for partition functions (equilibrium) and RADIS for rovibrational energies (nonequilibrium) ",
+        "path": ["/home/jovyan/databases/HITEMP/CO2/*.par"],
+        "format": "hitran",
+        "parfuncfmt": "hapi",
+        "levelsfmt": "radis",
+    },
 }
 
 # Add them :
