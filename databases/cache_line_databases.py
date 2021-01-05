@@ -6,7 +6,8 @@ from radis.misc.config import getDatabankList, getDatabankEntries
 
 from radis import SpectrumFactory
 
-sf = SpectrumFactory(1000, 10000,
+sf = SpectrumFactory(wavenum_min=2000,
+                     wavenum_max=3000,
                      isotope='1,2,3')
 
 for dbname in getDatabankList():

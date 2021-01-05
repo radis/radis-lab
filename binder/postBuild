@@ -23,6 +23,9 @@ jupyter lab build --name="RadisLab"
 # Datasets
 # --------
 
+echo "Downloading databases"
+echo "---------------------"
+
 # Create folders if needed
 cd ~
 mkdir databases
@@ -55,6 +58,10 @@ rm *.zip
 
 # Initial runs
 # ------------
+
+echo "Initializing databases"
+echo "----------------------"
+
 # (to auto-download / cache some database files
 # see https://github.com/radis/radis-lab/issues/9
 
@@ -62,3 +69,7 @@ rm *.zip
 cd ~/databases
 python init_radis_config.py
 
+# Cache all line databases 
+# ... trying to load all CO2 at once. May have problem if 2 GB RAM? 
+cd ~/databases
+python cache_line_databases.py
