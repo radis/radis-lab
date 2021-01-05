@@ -23,7 +23,7 @@ jupyter lab build --name="RADIS-Lab"
 # Datasets
 # --------
 
-echo "">>>>>>> Download databases"
+echo ">>>>>>> Download databases"
 
 # Create folders if needed
 cd ~
