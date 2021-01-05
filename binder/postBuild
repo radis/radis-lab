@@ -17,14 +17,13 @@ jupyter labextension install @jupyterlab/hdf5
 jupyter labextension install jupyterlab-plotly@4.14.1 plotlywidget@4.14.1
 
 
-jupyter lab build --name="RadisLab"
+jupyter lab build --name="RADIS-Lab"
 
 
 # Datasets
 # --------
 
-echo "Downloading databases"
-echo "---------------------"
+echo "">>>>>>> Download databases"
 
 # Create folders if needed
 cd ~
@@ -59,8 +58,7 @@ rm *.zip
 # Initial runs
 # ------------
 
-echo "Initializing databases"
-echo "----------------------"
+echo ">>>>>>> Initialize databases"
 
 # (to auto-download / cache some database files
 # see https://github.com/radis/radis-lab/issues/9
@@ -71,5 +69,12 @@ python init_radis_config.py
 
 # Cache all line databases 
 # ... trying to load all CO2 at once. May have problem if 2 GB RAM? 
+
+echo ">>>>>>> Cache downloaded databases"
+
 cd ~/databases
 python cache_line_databases.py
+
+echo ">>>>>>> Compute and cache HITRAN lines"
+
+python compute_hitran_spectra.py
