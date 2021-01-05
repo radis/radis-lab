@@ -23,4 +23,5 @@ for dbname in getDatabankList():
         db = {k:db0[k] for k in db0.keys() if k not in ['info', 'levelszpe']}
         db['path'] = path
         
+        sf.input.molecule=""
         sf.load_databank(**db)
