@@ -34,22 +34,10 @@ cd ~/databases/HITEMP
 # ... CO
 wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2
 
-# ... CO2
-mkdir CO2 
-cd CO2
-wget wget -np -nH --cut-dirs=6 -r https://hitran.org/hitemp/data/HITEMP-2010/CO2_line_list/
-rm index*
 
 # Unzip HITEMP
 cd ~/databases/HITEMP
-# ... CO
 python hitemp_bz2_extract.py 05_HITEMP2019.par.bz2
-rm 05_HITEMP2019.par.bz2
-
-# ... CO2
-cd CO2 
-unzip '*.zip'
-rm *.zip
 
 
 # Initial runs
@@ -61,15 +49,11 @@ rm *.zip
 cd ~/databases
 python init_radis_config.py
 
+
+
 cd ~
 papermill welcome.ipynb /dev/null 
-cd examples
+papermill compare_with_experiment.ipynb /dev/null 
 papermill compare_CO_HITRAN_HITEMP.ipynb /dev/null 
 cd ~/examples/co2-4080-4500nm
 papermill co2-4080-4500.ipynb /dev/null 
-
-
-# Cache all line databases 
-# ... trying to load all CO2 at once. May have problem if 2 GB RAM? 
-cd ~/databases
-python cache_line_databases.py
