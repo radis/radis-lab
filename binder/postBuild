@@ -3,6 +3,9 @@
 # JupyterLab extensions
 # ---------------------
 
+# support for Widgets
+jupyter labextension install @jupyter-widgets/jupyterlab-manager  --no-build
+
 # interactive Matplotlib plots 
 # ... see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
 jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
@@ -17,7 +20,7 @@ jupyter labextension install @jupyterlab/hdf5 --no-build
 # JupyterLab renderer support
 jupyter labextension install jupyterlab-plotly@4.14.1 --no-build
 # OPTIONAL: Jupyter widgets extension
-jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.14.1 --no-build
+jupyter labextension install plotlywidget@4.14.1 --no-build
 
 jupyter lab build --name="RadisLab" --minimize=False
 
@@ -41,7 +44,7 @@ wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2 --no-verbo
 # ... CO2
 mkdir CO2 
 cd CO2
-wget wget -np -nH --cut-dirs=6 -r https://hitran.org/hitemp/data/HITEMP-2010/CO2_line_list/  --no-verbose
+wget -np -nH --cut-dirs=6 -r https://hitran.org/hitemp/data/HITEMP-2010/CO2_line_list/  --no-verbose
 rm index*
 
 # Unzip HITEMP

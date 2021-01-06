@@ -11,7 +11,7 @@ sf = SpectrumFactory(wavenum_min=50,
                      isotope='1,2,3')
 
 for dbname in getDatabankList():
-    print(dbname)
+    print("Caching", dbname)
 
     db0 = getDatabankEntries(dbname)
 

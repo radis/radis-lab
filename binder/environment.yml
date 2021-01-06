@@ -24,7 +24,6 @@ dependencies:
 - numba  # just-in-time compiler
 - pip
 # Specific to radis-lab : 
-- pyqt
 - ipympl>=0.5.6  # for interactive plots
 - jupyterlab
 - ipywidgets>=7.5    # for plotly
