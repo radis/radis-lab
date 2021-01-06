@@ -14,10 +14,12 @@ jupyter labextension install jupyter-offlinenotebook
 jupyter labextension install @jupyterlab/hdf5
 
 # JupyterLab renderer support
-jupyter labextension install jupyterlab-plotly@4.14.1 plotlywidget@4.14.1
+jupyter labextension install jupyterlab-plotly@4.14.1
 
+# OPTIONAL: Jupyter widgets extension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.14.1
 
-jupyter lab build --name="RADIS-Lab"
+jupyter lab build --name="🌱RadisLab"
 
 
 # Datasets
