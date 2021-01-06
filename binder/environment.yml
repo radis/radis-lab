@@ -3,6 +3,7 @@ name: radis-env
 channels:
 - conda-forge
 - astropy
+- plotly
 dependencies:
 - python=3.6
 - numpy
@@ -13,7 +14,7 @@ dependencies:
 - h5py
 - numba
 - astropy  # Unit aware calculations
-- plotly>=2.5.1  # for line survey HTML output
+- plotly==4.14.1  # for line survey HTML output
 - termcolor  # terminal colors
 - configparser
 - astroquery>=0.3.9  # to fetch HITRAN databases
@@ -25,7 +26,9 @@ dependencies:
 # Specific to radis-lab : 
 - pyqt
 - ipympl>=0.5.6  # for interactive plots
-- papermill  # for https://github.com/radis/radis-lab/issues/9
+- jupyterlab
+- ipywidgets>=7.5    # for plotly
+- python-kaleido     # for plotly
 - pip:
   - publib>=0.3.2  # Plotting styles for Matplotlib
   - hitran-api

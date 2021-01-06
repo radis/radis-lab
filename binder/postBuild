@@ -5,23 +5,27 @@
 
 # interactive Matplotlib plots 
 # ... see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
-jupyter labextension install @jupyter-widgets/jupyterlab-manager
+jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
 
 # Make it possible to store after the Binder stopped.
-jupyter labextension install jupyter-offlinenotebook
+jupyter labextension install jupyter-offlinenotebook --no-build
 
 # HDF5 support to read line cache files and rovibrational energy files
-jupyter labextension install @jupyterlab/hdf5
+jupyter labextension install @jupyterlab/hdf5 --no-build
 
+# Plotly
 # JupyterLab renderer support
-jupyter labextension install jupyterlab-plotly@4.14.1 plotlywidget@4.14.1
+jupyter labextension install jupyterlab-plotly@4.14.1 --no-build
+# OPTIONAL: Jupyter widgets extension
+jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.14.1 --no-build
 
-
-jupyter lab build --name="RadisLab"
+jupyter lab build --name="RadisLab" --minimize=False
 
 
 # Datasets
 # --------
+
+echo ">>>>>>> Download databases"
 
 # Create folders if needed
 cd ~
@@ -32,16 +36,32 @@ mkdir HITEMP
 # Download HITEMP 
 cd ~/databases/HITEMP
 # ... CO
-wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2
+wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2 --no-verbose
 
+# ... CO2
+mkdir CO2 
+cd CO2
+wget wget -np -nH --cut-dirs=6 -r https://hitran.org/hitemp/data/HITEMP-2010/CO2_line_list/  --no-verbose
+rm index*
 
 # Unzip HITEMP
 cd ~/databases/HITEMP
+# ... CO
 python hitemp_bz2_extract.py 05_HITEMP2019.par.bz2
+rm 05_HITEMP2019.par.bz2
+
+# ... CO2
+cd CO2 
+unzip '*.zip'
+rm *.zip
+
 
 
 # Initial runs
 # ------------
+
+echo ">>>>>>> Initialize databases"
+
 # (to auto-download / cache some database files
 # see https://github.com/radis/radis-lab/issues/9
 
@@ -49,11 +69,14 @@ python hitemp_bz2_extract.py 05_HITEMP2019.par.bz2
 cd ~/databases
 python init_radis_config.py
 
+# Cache all line databases 
+# ... trying to load all CO2 at once. May have problem if 2 GB RAM? 
 
+echo ">>>>>>> Cache downloaded databases"
 
-cd ~
-papermill welcome.ipynb /dev/null 
-papermill compare_with_experiment.ipynb /dev/null 
-papermill compare_CO_HITRAN_HITEMP.ipynb /dev/null 
-cd ~/examples/co2-4080-4500nm
-papermill co2-4080-4500.ipynb /dev/null 
+cd ~/databases
+python cache_line_databases.py
+
+echo ">>>>>>> Compute and cache HITRAN lines"
+
+python compute_hitran_spectra.py
