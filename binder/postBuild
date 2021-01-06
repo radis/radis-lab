@@ -36,12 +36,12 @@ mkdir HITEMP
 # Download HITEMP 
 cd ~/databases/HITEMP
 # ... CO
-wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2
+wget https://hitran.org/hitemp/data/bzip2format/05_HITEMP2019.par.bz2 --no-verbose
 
 # ... CO2
 mkdir CO2 
 cd CO2
-wget wget -np -nH --cut-dirs=6 -r https://hitran.org/hitemp/data/HITEMP-2010/CO2_line_list/
+wget wget -np -nH --cut-dirs=6 -r https://hitran.org/hitemp/data/HITEMP-2010/CO2_line_list/  --no-verbose
 rm index*
 
 # Unzip HITEMP
