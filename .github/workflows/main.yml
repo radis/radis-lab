@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: s-weigand/trigger-mybinder-build@v1
         with:
-          target-repo: radis-lab/radis
+          target-repo: radis/radis-lab
           target-state: main  
