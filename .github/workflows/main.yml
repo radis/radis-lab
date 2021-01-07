@@ -1,16 +1,13 @@
-name: GH
-
+name: 'Trigger-Binder-build'
 on:
   push:
     branches:
-      - $default-branch
+      - main
 
 jobs:
-  CD:
-    runs-on: ubuntu-latest
+  trigger-binder-build:
+    runs-on: [ubuntu-latest]
     steps:
-      - name: Trigger Binder build
-        uses: s-weigand/trigger-mybinder-build@v1
+      - uses: s-weigand/trigger-mybinder-build@v1
         with:
-          target-repo: radis/radis-lab
-          target-state: $default-branch
+          target-repo: radis-lab/radis
