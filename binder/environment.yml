@@ -35,6 +35,6 @@ dependencies:
   - mpldatacursor
   - tables  # for pandas to HDF5 export
   # Specific to radis-lab:
-  - radis>=0.9.27
+  - radis>=0.9.28
   - jupyter-offlinenotebook
   - jupyterlab_hdf
