@@ -24,6 +24,7 @@ dependencies:
 - pip
 # Specific to radis-lab : 
 - ipympl>=0.5.6  # for interactive plots
+- jupyterlab_widgets
 - jupyterlab
 - ipywidgets>=7.5    # for plotly
 - python-kaleido     # for plotly
