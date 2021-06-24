@@ -5,21 +5,20 @@ channels:
 - astropy
 - plotly
 dependencies:
+# Radis dependencies : see https://github.com/radis/radis/blob/master/environment.yml
 - python=3.6
 - numpy
 - scipy
 - matplotlib
-- pandas
+- pandas>=1.0.5
 - plotly
-- h5py
 - numba
 - astropy  # Unit aware calculations
-- plotly==4.14.1  # for line survey HTML output
+- plotly>=2.5.1  # for line survey HTML output
 - termcolor  # terminal colors
 - configparser
 - astroquery>=0.3.9  # to fetch HITRAN databases
 - pytest  # to run test suite
-- h5py  # to write HDF5 files
 - joblib  # for parallel loading of SpecDatabase
 - numba  # just-in-time compiler
 - pip
@@ -29,12 +28,13 @@ dependencies:
 - ipywidgets>=7.5    # for plotly
 - python-kaleido     # for plotly
 - pip:
+  # Radis dependencies : see https://github.com/radis/radis/blob/master/environment.yml
   - publib>=0.3.2  # Plotting styles for Matplotlib
   - hitran-api
   - json-tricks>=3.13.6  # to deal with non jsonable formats
   - mpldatacursor
   - tables  # for pandas to HDF5 export
   # Specific to radis-lab:
-  - radis>=0.9.28
+  - radis>=0.9.29
   - jupyter-offlinenotebook
   - jupyterlab_hdf
