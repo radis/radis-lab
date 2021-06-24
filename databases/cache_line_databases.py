@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" Load all all pre-configured databases in ~/.radis to generate cache files """
+""" Load all all pre-configured databases in ~/radis.json to generate cache files """
 
 from radis.misc.utils import get_files_from_regex
 from radis.misc.config import getDatabankList, getDatabankEntries

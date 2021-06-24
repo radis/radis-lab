@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-""" Init and add pre-configured databases to RADIS ~/.radis config file in HOME """
+""" Init and add pre-configured databases to RADIS ~/radis.json config file in HOME """
 
 from radis.misc.config import (
     addDatabankEntries,
@@ -44,13 +44,13 @@ for dbname, dbentries in RADIS_LAB_DATABASES.items():
         if diff is not None:
             raise ValueError(
                 "{0}".format(diff)
-                + "\nIn ~/.radis\n----------\n{0}".format(getDatabankEntries(dbname))
+                + "\nIn ~/radis.json\n----------\n{0}".format(getDatabankEntries(dbname))
                 + "\n\nExpected\n---------\n{0}\n\n".format(dbentries)
                 + "Test Database {0} doesnt match expected ".format(dbname)
                 + "entries for key `{0}`. See comparison above. ".format(diff)
                 + "To regenerate test databases just delete the {0} ".format(dbname)
-                + "entry in your ~/.radis"
+                + "entry in your ~/radis.json"
             )
 
-    else:  # add them (create ~/.radis file if doesnt exist yet)
+    else:  # add them (create ~/radis.json file if doesnt exist yet)
         addDatabankEntries(dbname, dbentries)
