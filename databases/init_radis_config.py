@@ -10,19 +10,19 @@ from radis.misc.config import (
 
 # Make sure the names correspond to the databases unzipped in postBuild.
 RADIS_LAB_DATABASES = {
-    "HITEMP2019-CO":
-    {
-        "info": "HITEMP2019 CO lines with TIPS-2017 for partition functions (equilibrium) and RADIS for rovibrational energies (nonequilibrium) ",
-        "path": ["/home/jovyan/databases/HITEMP/05_HITEMP2019_all.par"],
-        "format": "hitran",
-        "parfuncfmt": "hapi",
-        "levelsfmt": "radis",
-    },
     "HITEMP2010-CO2":
     {
         "info": "HITEMP2020 CO2 lines with TIPS-2017 for partition functions (equilibrium) and RADIS for rovibrational energies (nonequilibrium) ",
         "path": ["/home/jovyan/databases/HITEMP/CO2/*.par"],
-        "format": "hitran",
+        "format": "hitemp",
+        "parfuncfmt": "hapi",
+        "levelsfmt": "radis",
+    },
+    "HITEMP2010-H2O":
+    {
+        "info": "HITEMP2020 H2O lines with TIPS-2017 for partition functions (equilibrium) and RADIS for rovibrational energies (nonequilibrium) ",
+        "path": ["/home/jovyan/databases/HITEMP/H2O/*.par"],
+        "format": "hitemp",
         "parfuncfmt": "hapi",
         "levelsfmt": "radis",
     },
