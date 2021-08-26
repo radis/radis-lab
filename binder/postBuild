@@ -54,3 +54,12 @@ echo ">>>>>>> Download & parse other HITEMP lines"
 
 cd ~/databases
 python download_hitemp.py
+
+
+echo ">>>>>>> Download & parse HITEMP H2O lines (2nd round)"
+
+# Retry H2O. Sometimes first round seem to fail because of timeout... Will be improved with parallel parsing.
+cd ~/databases
+python download_hitemp_H2O.py
+
+
