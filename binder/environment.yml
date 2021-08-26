@@ -46,6 +46,6 @@ dependencies:
   - vaex    # load HDF5 files
   - habanero  # CrossRef API to retrieve data from doi
   # Specific to radis-lab:
-  - radis>=0.9.30
+  - radis>=0.10.1
   - jupyter-offlinenotebook
   - jupyterlab_hdf
