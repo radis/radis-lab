@@ -8,12 +8,6 @@
 # execute run commands
 # ...
 
-# Init RADIS config
-python ~/databases/init_radis_config.py
-
-
-
-
 # Workspace Layout 
 
 # ... Import the workspace layout into JupyterLab (windows opened, etc.)
