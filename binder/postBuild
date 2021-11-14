@@ -1,28 +1,5 @@
 #!/bin/bash
 
-# JupyterLab extensions
-# ---------------------
-
-# support for Widgets
-#jupyter labextension install @jupyter-widgets/jupyterlab-manager  --no-build       # ... not needed anymore with JupyterLab 3.x
-
-# interactive Matplotlib plots 
-# ... see https://github.com/matplotlib/ipympl#install-the-jupyterlab-extension
-# jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build         # ... not needed anymore with JupyterLab 3.x
-
-# Make it possible to store after the Binder stopped.
-# jupyter labextension install jupyter-offlinenotebook --no-build         # ... not needed anymore with JupyterLab 3.x
-
-# HDF5 support to read line cache files and rovibrational energy files
-#jupyter labextension install @jupyterlab/hdf5 --no-build            # ... not needed anymore with JupyterLab 3.x
-
-# Plotly
-# JupyterLab renderer support
-# ... not needed anymore with JupyterLab 3.x
-
-#jupyter lab build --name="RadisLab" --minimize=False
-
-
 
 # Initial runs
 # ------------
@@ -35,7 +12,7 @@ echo ">>>>>>> Initialize databases"
 echo ">>>>>>> Compute and cache HITRAN lines"
 
 cd ~/databases
-python compute_hitran_spectra.py
+python download_hitran.py
 
 
 echo ">>>>>>> Download & parse HITEMP CO2 lines"
