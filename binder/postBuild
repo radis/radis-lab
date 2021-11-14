@@ -6,6 +6,8 @@
 
 echo ">>>>>>> Initialize databases"
 
+mkdir ~/.radisdb
+
 # (to auto-download / cache some database files
 # see https://github.com/radis/radis-lab/issues/9
 
