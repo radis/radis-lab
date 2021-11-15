@@ -46,6 +46,6 @@ dependencies:
   - tables  # for pandas to HDF5 export
   - habanero  # CrossRef API to retrieve data from doi
   # Specific to radis-lab:
-  - radis>=0.11
+  - radis>=0.11.1
   - jupyter-offlinenotebook
   - jupyterlab_hdf
