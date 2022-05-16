@@ -34,3 +34,8 @@ echo ">>>>>>> Download & parse other HITEMP lines"
 cd ~/databases
 python download_hitemp.py
 
+
+echo ">>>>>>> Compute and cache GEISA lines"
+
+cd ~/databases
+python download_geisa.py

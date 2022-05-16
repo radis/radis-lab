@@ -24,7 +24,7 @@ dependencies:
 - seaborn   # other matplotlib themes
 - termcolor  # terminal colors
 - specutils
-- vaex>=4.6.0   # load HDF5 files  (version for custom HDF5 groups + avoids asyncio https://github.com/vaexio/vaex/pull/1546). #TODO : install only required sub-packages
+- vaex>=4.8.0   # load HDF5 files  (version for custom HDF5 groups + avoids asyncio https://github.com/vaexio/vaex/pull/1546). #TODO : install only required sub-packages
 - pip
 # Specific to radis-lab : 
 - ipympl>=0.5.6  # for interactive plots
@@ -46,6 +46,6 @@ dependencies:
   - tables  # for pandas to HDF5 export
   - habanero  # CrossRef API to retrieve data from doi
   # Specific to radis-lab:
-  - radis>=0.12.0
+  - radis>=0.13.0
   - jupyter-offlinenotebook
   - jupyterlab_hdf
