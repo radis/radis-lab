@@ -18,12 +18,12 @@ cd ~/databases
 python download_geisa.py
 
 
-# echo ">>>>>>> Compute and cache HITRAN lines"
-# 
-# cd ~/databases
-# python download_hitran.py
-# 
-# 
+echo ">>>>>>> Compute and cache HITRAN lines"
+
+cd ~/databases
+python download_hitran.py
+
+
 # echo ">>>>>>> Download & parse HITEMP CO2 lines"
 # 
 # cd ~/databases
@@ -40,3 +40,4 @@ python download_geisa.py
 # 
 # cd ~/databases
 # python download_hitemp.py
+# 
