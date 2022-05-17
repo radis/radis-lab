@@ -18,25 +18,67 @@ cd ~/databases
 python download_geisa.py
 
 
-echo ">>>>>>> Compute and cache HITRAN lines"
+# echo ">>>>>>> Compute and cache HITRAN lines"
+# 
+# cd ~/databases
+# python download_hitran.py
+# 
+# 
+# echo ">>>>>>> Download & parse HITEMP CO2 lines"
+# 
+# cd ~/databases
+# python download_hitemp_CO2.py
+# 
+# 
+# echo ">>>>>>> Download & parse HITEMP H2O lines"
+# 
+# cd ~/databases
+# python download_hitemp_H2O.py
+# 
+# 
+# echo ">>>>>>> Download & parse other HITEMP lines"
+# 
+# cd ~/databases
+# python download_hitemp.py
+#!/bin/bash
+
+
+# Initial runs
+# ------------
+
+echo ">>>>>>> Initialize databases"
+
+mkdir ~/.radisdb
+
+# (to auto-download / cache some database files
+# see https://github.com/radis/radis-lab/issues/9
+
+
+echo ">>>>>>> Compute and cache GEISA lines"
 
 cd ~/databases
-python download_hitran.py
+python download_geisa.py
 
 
-echo ">>>>>>> Download & parse other HITEMP lines"
-
-cd ~/databases
-python download_hitemp.py
-
-
-echo ">>>>>>> Download & parse HITEMP CO2 lines"
-
-cd ~/databases
-python download_hitemp_CO2.py
-
-
-echo ">>>>>>> Download & parse HITEMP H2O lines"
-
-cd ~/databases
-python download_hitemp_H2O.py
+# echo ">>>>>>> Compute and cache HITRAN lines"
+# 
+# cd ~/databases
+# python download_hitran.py
+# 
+# 
+# echo ">>>>>>> Download & parse HITEMP CO2 lines"
+# 
+# cd ~/databases
+# python download_hitemp_CO2.py
+# 
+# 
+# echo ">>>>>>> Download & parse HITEMP H2O lines"
+# 
+# cd ~/databases
+# python download_hitemp_H2O.py
+# 
+# 
+# echo ">>>>>>> Download & parse other HITEMP lines"
+# 
+# cd ~/databases
+# python download_hitemp.py
