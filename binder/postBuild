@@ -24,20 +24,19 @@ cd ~/databases
 python download_hitran.py
 
 
-# echo ">>>>>>> Download & parse HITEMP CO2 lines"
-# 
-# cd ~/databases
-# python download_hitemp_CO2.py
-# 
-# 
-# echo ">>>>>>> Download & parse HITEMP H2O lines"
-# 
-# cd ~/databases
-# python download_hitemp_H2O.py
-# 
-# 
-# echo ">>>>>>> Download & parse other HITEMP lines"
-# 
-# cd ~/databases
-# python download_hitemp.py
-# 
+echo ">>>>>>> Download & parse other HITEMP lines"
+
+cd ~/databases
+python download_hitemp.py
+
+
+echo ">>>>>>> Download & parse HITEMP CO2 lines"
+
+cd ~/databases
+python download_hitemp_CO2.py
+
+
+echo ">>>>>>> Download & parse HITEMP H2O lines"
+
+cd ~/databases
+python download_hitemp_H2O.py
