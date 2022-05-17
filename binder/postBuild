@@ -36,7 +36,7 @@ cd ~/databases
 python download_hitemp_CO2.py
 
 
-echo ">>>>>>> Download & parse HITEMP H2O lines"
-
-cd ~/databases
-python download_hitemp_H2O.py
+#echo ">>>>>>> Download & parse HITEMP H2O lines"
+#
+#cd ~/databases
+#python download_hitemp_H2O.py
